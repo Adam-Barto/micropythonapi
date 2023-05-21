@@ -1,5 +1,6 @@
 from django.db import models
 
+
 # Create your models here.
 
 class Book(models.Model):
@@ -7,7 +8,7 @@ class Book(models.Model):
     author = models.CharField(max_length=128)
     rating = models.FloatField(default=0)
     reviews = models.IntegerField(default=0)
-    price = models.IntegerField(default=0)
+    price = models.IntegerField(default=0)  # Why is this an Integer and not a Float?
     year = models.CharField(max_length=8)
     genre = models.CharField(max_length=32)
 
